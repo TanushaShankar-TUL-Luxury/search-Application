@@ -15,7 +15,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v10
         with:
           urls: |
-            'https://www.tatacliq.com'
+            'https://luxury.tatacliq.com'
           temporaryPublicStorage: true
           uploadArtifacts: true
           artifactName: lighthouse-results
@@ -42,7 +42,7 @@ jobs:
             const currentDate = new Date();
             console.log('resultsPath','${{steps.lighthouse.outputs.resultsPath}}'); console.log('links','${{steps.lighthouse.outputs.links}}'); console.log('assertionResults','${{steps.lighthouse.outputs.assertionResults}}'); console.log('manifest','${{steps.lighthouse.outputs.manifest}}'); 
             const bodyData = {   "msite": {
-                "url": "www.tatacliq.com",
+                "url": "https://luxury.tatacliq.com",
                 "currentDateTime":currentDate,
                 "pageName": "Pdp",
                 "webVitalData": {
